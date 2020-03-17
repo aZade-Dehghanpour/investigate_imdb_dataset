@@ -1,11 +1,16 @@
 ### Creation Date
-13.03.2020
+17.03.2020
 
 ### Title
-Project Template
+Investigate IMDB Dataset
 
 ### Description
-This folder/file structure is to be used as a template for projects focused on data analysis
+This is one of the mandatory projects as part of Udacity Data Analyst Nano Degree. The objective is, to conduct a data analysis and create a file to share that documents the findings. Analysis should clearly include:
+1: Pose questions
+2: Wrangle data
+3: Perform EDA (Exploratory Data Analysis)
+4: Draw conclusions
+5: Communicate the results
 
 ### Files used
 
