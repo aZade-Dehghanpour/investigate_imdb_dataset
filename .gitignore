@@ -1,16 +1,3 @@
-Codes/Notebook/Cast Column cleaned.ipynb
-Codes/Notebook/GenresColumn cleaned.ipynb
-Codes/Notebook/clean data.ipynb
-Codes/Notebook/investigate-a-dataset-IMDB.ipynb
-Codes/Notebook/movie Column cleaned.ipynb
-Codes/Notebook/Dataset Description.ipynb
-Codes/Notebook/Intro to Data Analysis.ipynb
-Codes/Notebook/director Column cleaned.ipynb
-Codes/Notebook/keywords Column cleaned.ipynb
-Codes/Notebook/production_comp Column cleaned.ipynb
-Codes/Notebook/Fuel Economy Analysis.ipynb
-Codes/Notebook/Untitled.ipynb
-Codes/Notebook/merging.ipynb
-Codes/Notebook/investigate-a-dataset-template.ipynb
+Datasets/*.csv
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
