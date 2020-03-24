@@ -13137,9 +13137,9 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 <p><strong>Question 1: Is it worth the time to watch movies?* If so, when picking a movie how would one know they won't be disappointed?<a href = #conclusionq1>Conclusion</a></strong><br></p>
 <li>What are the chances of ending up with a good movie? <a href = #answerq11>Insight</a></li>
 <li>Does it matter when the movie was produced? <a href = #answerq12>Insight</a></li>
-<li>Which genre(s) are associated with good movies? <a href = #answerq13>Insight</a></font></li><blockquote><p>*<em>It is assumed that you have no prior knowledge about movies. And want to randomly pick a movie out of a list.</em></p>
+<li>Which genre(s) are associated with good movies? <a href = #answerq13>Insight</a></li><blockquote><p>*<em>It is assumed that you have no prior knowledge about movies. And want to randomly pick a movie out of a list.</em></p>
 </blockquote>
-<p><strong>Question 2: Is it a good idea to invest in movie production? If so, how to maximise your chances of success?<a href = #conclusionq2>Conclusion</a>&lt;/strong&gt;<br></strong></p>
+<p><strong>Question 2: Is it a good idea to invest in movie production? If so, how to maximise your chances of success?<a href = #conclusionq2>Conclusion</a><br></strong></p>
 <li>What are the chances of succeeding?<a href = #answerq21>Insight</a></li>
 <li>Does initial investment guarantee financial success?<a href = #answerq22>Insight</a></li>
 <li>Does content quality bring in more profit? <a href = #answerq23>Insight</a></li>
@@ -13149,7 +13149,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[272]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13192,7 +13192,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[273]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Datasets/movies.csv&#39;</span><span class="p">)</span>
@@ -13209,7 +13209,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[273]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -13318,7 +13318,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[274]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dataset consist of </span><span class="si">{}</span><span class="s1"> rows and </span><span class="si">{}</span><span class="s1"> columns.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
@@ -13358,7 +13358,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[275]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Of </span><span class="si">{}</span><span class="s1"> rows, </span><span class="si">{}</span><span class="s1"> are unique and </span><span class="si">{}</span><span class="s1"> is a duplicate.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">id</span><span class="o">.</span><span class="n">nunique</span><span class="p">(),</span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
@@ -13397,7 +13397,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[276]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
@@ -13413,7 +13413,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[276]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13507,7 +13507,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[277]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -13523,7 +13523,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[277]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13549,7 +13549,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[278]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">eq</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
@@ -13565,7 +13565,7 @@ Original data provided by <a href="https://www.kaggle.com/tmdb/tmdb-movie-metada
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[278]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13660,7 +13660,7 @@ Although this information is not of importance for every column, it helps us ens
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[279]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">nunique</span><span class="p">())</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
@@ -13676,7 +13676,7 @@ Although this information is not of importance for every column, it helps us ens
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[279]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13761,7 +13761,7 @@ Although this information is not of importance for every column, it helps us ens
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[280]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span><span class="p">[[</span><span class="s1">&#39;original_title&#39;</span><span class="p">,</span><span class="s1">&#39;director&#39;</span><span class="p">,</span><span class="s1">&#39;cast&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -13777,7 +13777,7 @@ Although this information is not of importance for every column, it helps us ens
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[280]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13812,7 +13812,7 @@ Although this information is not of importance for every column, it helps us ens
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[281]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -13897,7 +13897,7 @@ memory usage: 1.7+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[282]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;imdb_id&#39;</span><span class="p">,</span><span class="s1">&#39;popularity&#39;</span><span class="p">,</span><span class="s1">&#39;homepage&#39;</span><span class="p">,</span><span class="s1">&#39;tagline&#39;</span><span class="p">,</span><span class="s1">&#39;overview&#39;</span><span class="p">,</span><span class="s1">&#39;budget&#39;</span><span class="p">,</span><span class="s1">&#39;revenue&#39;</span><span class="p">],</span><span class="n">axis</span> <span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -13919,7 +13919,7 @@ memory usage: 1.7+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[283]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -13951,7 +13951,7 @@ memory usage: 1.7+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[284]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Drop rows with entries on the same film</span>
@@ -13968,7 +13968,7 @@ memory usage: 1.7+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[284]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -14038,7 +14038,7 @@ memory usage: 1.7+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[285]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span><span class="p">[</span><span class="n">df_raw_data</span><span class="p">[</span><span class="s1">&#39;original_title&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Madea&#39;s Family Reunion&quot;</span><span class="p">]</span>
@@ -14054,7 +14054,7 @@ memory usage: 1.7+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[285]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -14141,7 +14141,7 @@ memory usage: 1.7+ MB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[286]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">4063</span><span class="p">],</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -14158,7 +14158,7 @@ memory usage: 1.7+ MB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[286]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -14246,7 +14246,7 @@ Datatype for release date is string. It should be converted to datetime.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[287]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span><span class="o">.</span><span class="n">release_date</span> <span class="o">=</span> <span class="n">df_raw_data</span><span class="o">.</span><span class="n">release_date</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">d</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]))</span><span class="o">+</span> <span class="n">df_raw_data</span><span class="o">.</span><span class="n">release_year</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
@@ -14264,7 +14264,7 @@ Datatype for release date is string. It should be converted to datetime.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[287]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -14320,7 +14320,7 @@ Name: release_date, Length: 10864, dtype: datetime64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[288]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df_raw_data</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
@@ -14353,7 +14353,7 @@ This will make it difficult to efficiently analyse the data based on one specifi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[289]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_raw_data</span><span class="p">[[</span><span class="s1">&#39;cast&#39;</span><span class="p">,</span><span class="s1">&#39;keywords&#39;</span><span class="p">,</span><span class="s1">&#39;genres&#39;</span><span class="p">,</span><span class="s1">&#39;production_companies&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -14369,7 +14369,7 @@ This will make it difficult to efficiently analyse the data based on one specifi
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[289]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14451,7 +14451,7 @@ This will make it difficult to efficiently analyse the data based on one specifi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[290]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_movies</span> <span class="o">=</span> <span class="n">df_raw_data</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;original_title&#39;</span><span class="p">,</span><span class="s1">&#39;release_date&#39;</span><span class="p">,</span><span class="s1">&#39;release_year&#39;</span><span class="p">,</span><span class="s1">&#39;runtime&#39;</span><span class="p">,</span><span class="s1">&#39;vote_average&#39;</span><span class="p">,</span><span class="s1">&#39;budget_adj&#39;</span><span class="p">,</span><span class="s1">&#39;revenue_adj&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -14493,7 +14493,7 @@ Number of 0 entries: 11741 to be found in columns: [&#39;runtime&#39;, &#39;budg
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[291]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_movies</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;../../Datasets/movies_dataset.csv&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
@@ -14510,7 +14510,7 @@ Number of 0 entries: 11741 to be found in columns: [&#39;runtime&#39;, &#39;budg
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[291]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14587,7 +14587,7 @@ Number of 0 entries: 11741 to be found in columns: [&#39;runtime&#39;, &#39;budg
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[292]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_actors</span> <span class="o">=</span> <span class="n">df_raw_data</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;cast&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -14620,7 +14620,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[293]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_actors</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -14644,7 +14644,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[294]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_actors</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -14660,7 +14660,7 @@ Number of 0 entries: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[294]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -14727,7 +14727,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[295]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_genres</span> <span class="o">=</span> <span class="n">df_raw_data</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;genres&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -14761,7 +14761,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[296]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_genres</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -14792,7 +14792,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[297]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_genres</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -14808,7 +14808,7 @@ Number of 0 entries: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[297]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -14874,7 +14874,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[298]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_keywords</span> <span class="o">=</span> <span class="n">df_raw_data</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;keywords&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -14907,7 +14907,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[299]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_keywords</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -14939,7 +14939,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[300]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_keywords</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -14955,7 +14955,7 @@ Number of 0 entries: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[300]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -15022,7 +15022,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[301]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_production_companies</span> <span class="o">=</span> <span class="n">df_raw_data</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;production_companies&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -15055,7 +15055,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[302]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_production_companies</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -15087,7 +15087,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[303]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_production_companies</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -15103,7 +15103,7 @@ Number of 0 entries: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[303]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -15171,7 +15171,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[304]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">split_data</span> <span class="p">(</span><span class="n">input_dataframe</span><span class="p">,</span> <span class="n">column_to_trim</span><span class="p">):</span>
@@ -15203,7 +15203,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[305]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_actors_trimmed</span> <span class="o">=</span> <span class="n">split_data</span><span class="p">(</span><span class="n">df_actors</span><span class="p">,</span><span class="s1">&#39;actor&#39;</span><span class="p">)</span>
@@ -15223,7 +15223,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[306]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_actors</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../../Datasets/actors_dataset_trimmed.csv&#39;</span><span class="p">)</span>
@@ -15247,7 +15247,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[308]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_actors</span><span class="p">[(</span><span class="n">df_actors</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="mi">135397</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_actors</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="mi">76341</span><span class="p">)]</span>
@@ -15263,7 +15263,7 @@ Number of 0 entries: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[308]:</div>
+    <div class="prompt output_prompt">Out[36]:</div>
 
 
 
@@ -15369,7 +15369,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[309]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_genres</span><span class="p">[(</span><span class="n">df_genres</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="mi">135397</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_genres</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="mi">76341</span><span class="p">)]</span>
@@ -15385,7 +15385,7 @@ Number of 0 entries: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[309]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -15481,7 +15481,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[310]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_production_companies</span><span class="p">[(</span><span class="n">df_production_companies</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="mi">135397</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_production_companies</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="mi">76341</span><span class="p">)]</span>
@@ -15497,7 +15497,7 @@ Number of 0 entries: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[310]:</div>
+    <div class="prompt output_prompt">Out[38]:</div>
 
 
 
@@ -15588,7 +15588,7 @@ Number of 0 entries: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[311]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_keywords</span><span class="p">[(</span><span class="n">df_keywords</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="mi">135397</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_keywords</span><span class="o">.</span><span class="n">id</span><span class="o">==</span><span class="mi">76341</span><span class="p">)]</span>
@@ -15604,7 +15604,7 @@ Number of 0 entries: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[311]:</div>
+    <div class="prompt output_prompt">Out[39]:</div>
 
 
 
@@ -15720,7 +15720,7 @@ Columns <code>runtime</code>, <code>budget_adj</code>and <code>revenue_adj</code
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[312]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fix_zero_values</span><span class="p">(</span><span class="n">column_name</span><span class="p">):</span>
@@ -15757,7 +15757,7 @@ Columns <code>runtime</code>, <code>budget_adj</code>and <code>revenue_adj</code
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[316]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fix_zero_values</span><span class="p">(</span><span class="s1">&#39;runtime&#39;</span><span class="p">)</span>
@@ -15782,9 +15782,9 @@ Columns <code>runtime</code>, <code>budget_adj</code>and <code>revenue_adj</code
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Number of zero values in runtime columns: 0
-Number of zero values in revenue_adj columns: 0
-Number of zero values in budget_adj columns: 0
+<pre>Number of zero values in runtime columns: 1
+Number of zero values in revenue_adj columns: 23
+Number of zero values in budget_adj columns: 22
 </pre>
 </div>
 </div>
@@ -15804,7 +15804,7 @@ Number of zero values in budget_adj columns: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[317]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">revenue_adj_id_list</span> <span class="o">=</span> <span class="n">df_movies</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;revenue_adj == &quot;0&quot;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">index</span>
@@ -15839,7 +15839,7 @@ Number of zero values in budget_adj columns: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[318]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_movies</span><span class="o">.</span><span class="n">runtime</span> <span class="o">=</span> <span class="n">df_movies</span><span class="o">.</span><span class="n">runtime</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
@@ -15852,7 +15852,7 @@ Number of zero values in budget_adj columns: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[319]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_movies</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;../../Datasets/movies_dataset.csv&#39;</span><span class="p">,</span><span class="n">index</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
@@ -15876,9 +15876,9 @@ Number of zero values in budget_adj columns: 0
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id = 'q1'></a></p>
-<h2 id="Question-1:-Is-it-worth-the-time-to-watch-movies?-If-so,-when-picking-a-movie-how-would-one-know-they-won't-be-disappointed?">Question 1: Is it worth the time to watch movies? If so, when picking a movie how would one know they won't be disappointed?<a class="anchor-link" href="#Question-1:-Is-it-worth-the-time-to-watch-movies?-If-so,-when-picking-a-movie-how-would-one-know-they-won't-be-disappointed?">&#182;</a></h2><p>. <font size="4"><strong>What are the chances of ending up with a good movie?</font>&lt;/strong&gt;<br>
-. <font size="4"><strong>Does it matter when the movie was produced?</font>&lt;/strong&gt;<br>
-. <font size="4"><strong>Which genre(s) are associated with good movies? </font>&lt;/strong&gt;<br></p>
+<h2 id="Question-1:-Is-it-worth-the-time-to-watch-movies?-If-so,-when-picking-a-movie-how-would-one-know-they-won't-be-disappointed?">Question 1: Is it worth the time to watch movies? If so, when picking a movie how would one know they won't be disappointed?<a class="anchor-link" href="#Question-1:-Is-it-worth-the-time-to-watch-movies?-If-so,-when-picking-a-movie-how-would-one-know-they-won't-be-disappointed?">&#182;</a></h2><p>. <font size="4"><strong>What are the chances of ending up with a good movie? </strong></font><br>
+. <font size="4"><strong>Does it matter when the movie was produced? </strong></font><br>
+. <font size="4"><strong>Which genre(s) are associated with good movies? </strong></font><br></p>
 <p>To answer this question, data will be explored with vote_average assigned to each movie. first step would be to label movies as good or bad so as to be able to later group them accordingly and perform the analysis.</p>
 
 </div>
@@ -15887,7 +15887,7 @@ Number of zero values in budget_adj columns: 0
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><font size="3"><strong>What are the chances of ending up with a good movie? </strong>&lt;/fornt&gt;
+<p><font size="3"><strong>What are the chances of ending up with a good movie? </strong></font>
 <a id='answerq11'></a></p>
 
 </div>
@@ -15895,7 +15895,7 @@ Number of zero values in budget_adj columns: 0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[320]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_movies</span><span class="o">.</span><span class="n">vote_average</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -15911,7 +15911,7 @@ Number of zero values in budget_adj columns: 0
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[320]:</div>
+    <div class="prompt output_prompt">Out[45]:</div>
 
 
 
@@ -15936,7 +15936,7 @@ Name: vote_average, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[321]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Categorize movies into &#39;Waste of time&#39;, &#39;Not bad&#39;, &#39;Worth the time&#39; based on vote_average for each movie. </span>
@@ -15957,7 +15957,7 @@ Name: vote_average, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[322]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot a pie chart that illustrates distribution of movies according to rating</span>
@@ -16008,14 +16008,14 @@ Name: vote_average, dtype: float64</pre>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='answerq12'></a>
-<font size="3"><strong>Does it matter when the movie was produced? </strong>&lt;/fornt&gt;<br></p>
+<font size="3"><strong>Does it matter when the movie was produced? </strong></font><br></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[323]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Categorize release_year into decades 66-76,76-86,86-96... and assing a new entry to each movie at a new column &#39;decade&#39;</span>
@@ -16038,7 +16038,7 @@ Name: vote_average, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[323]:</div>
+    <div class="prompt output_prompt">Out[48]:</div>
 
 
 
@@ -16098,7 +16098,7 @@ Name: vote_average, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[324]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot a pie chart that illustrates distribution of movies according to rating</span>
@@ -16175,14 +16175,14 @@ If you're not up for a disappointment, best to avoid movies released between 200
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='answerq13'></a>
-<font size="3"><strong>Which genre(s) are associated with good movies? </strong>&lt;/fornt&gt;<br></p>
+<font size="3"><strong>Which genre(s) are associated with good movies? </strong></font><br></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[325]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot a bar chart that illustrates distribution of movies across to genres</span>
@@ -16248,6 +16248,39 @@ If you're not up for a disappointment, best to avoid movies released between 200
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[64]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>pandas.core.series.Series</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16262,10 +16295,10 @@ But again, there aren't that many options in Documentry/Histoy/Music genre. But 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id = 'q2'></a></p>
-<h2 id="Question-2:-Is-it-a-good-idea-to-invest-in-movie-production?-If-so,-how-to-maximise-your-chances-of-success?">Question 2: Is it a good idea to invest in movie production? If so, how to maximise your chances of success?<a class="anchor-link" href="#Question-2:-Is-it-a-good-idea-to-invest-in-movie-production?-If-so,-how-to-maximise-your-chances-of-success?">&#182;</a></h2><p>. <font size="4"><strong>What are the chances of succeeding?</font>&lt;/strong&gt;<br>
-. <font size="4"><strong>Does initial investment guarantee financial success?</font>&lt;/strong&gt;<br>
-. <font size="4"><strong>Does content quality bring in more profit? </font>&lt;/strong&gt;<br>
-. <font size="4"><strong>And which genre(s) is/are the most promising of all?</font>&lt;/strong&gt;<br></p>
+<h2 id="Question-2:-Is-it-a-good-idea-to-invest-in-movie-production?-If-so,-how-to-maximise-your-chances-of-success?">Question 2: Is it a good idea to invest in movie production? If so, how to maximise your chances of success?<a class="anchor-link" href="#Question-2:-Is-it-a-good-idea-to-invest-in-movie-production?-If-so,-how-to-maximise-your-chances-of-success?">&#182;</a></h2><p>. <font size="4"><strong>What are the chances of succeeding?</strong></font><br>
+. <font size="4"><strong>Does initial investment guarantee financial success? </strong></font><br>
+. <font size="4"><strong>Does content quality bring in more profit? </strong></font><br>
+. <font size="4"><strong>And which genre(s) is/are the most promising of all?</strong></font><br></p>
 
 </div>
 </div>
@@ -16281,7 +16314,7 @@ But again, there aren't that many options in Documentry/Histoy/Music genre. But 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[326]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Calculate profit:revenue_adj - budget_adj</span>
@@ -16300,7 +16333,7 @@ But again, there aren't that many options in Documentry/Histoy/Music genre. But 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[326]:</div>
+    <div class="prompt output_prompt">Out[51]:</div>
 
 
 
@@ -16325,7 +16358,7 @@ Name: profit, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[327]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#label movies according to the profit categories: &#39;Loss&#39;,&#39;Low Profit&#39;,&#39;Medium Profit&#39;,&#39;Moderately High Profit&#39;,&#39;High Profit&#39;</span>
@@ -16343,7 +16376,7 @@ Name: profit, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[328]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot a pie chart that illustrates share of each profit category in the dataset</span>
@@ -16406,7 +16439,7 @@ Name: profit, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[329]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_revenue_n_budget</span> <span class="o">=</span> <span class="n">df_movies</span><span class="p">[[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;revenue_adj&#39;</span><span class="p">,</span><span class="s1">&#39;budget_adj&#39;</span><span class="p">,</span><span class="s1">&#39;profit&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -16512,7 +16545,7 @@ Name: profit, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[330]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig_corr_profit_rating</span><span class="p">,(</span><span class="n">ax_corr_profit_rating</span><span class="p">,</span> <span class="n">ax_corr_budget_rating</span> <span class="p">)</span><span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
@@ -16575,7 +16608,7 @@ Name: profit, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[331]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Determine how each genre does regarding profit</span>
@@ -16598,7 +16631,7 @@ Name: profit, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[331]:</div>
+    <div class="prompt output_prompt">Out[56]:</div>
 
 
 
@@ -16627,7 +16660,7 @@ Name: id, Length: 100, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[332]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Calculate average budget for each genre</span>
@@ -16643,7 +16676,7 @@ Name: id, Length: 100, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[333]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#calculate proportions</span>
@@ -16734,7 +16767,7 @@ The category to avoid would be Documentry. The genre with lowest average profit.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[334]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span><span class="n">ax2</span><span class="p">,</span><span class="n">ax3</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -16828,7 +16861,7 @@ Unfortunately, there aren't that many options in Documentry/Histoy/Music genre. 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[335]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot a pie chart that illustrates share of each profit category in the dataset</span>
@@ -16946,6 +16979,31 @@ While higher ratings are associated with higher profit, not every genre sells we
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h2><p><strong>Information on adjusted budget and revenue:</strong> The data was missing from more than 50% of the records. To fix it, the average value for each genre was canclulated and used. But since that is data manipulation at very larg scale, it might have drastically distorted the findings. For example the relationship between Ratings and Budget/Revenue.<br>
+<strong>Genres:</strong> most movies are listed under 2-3 different genres. When the calculations are done, they are taken into consideration more than once.<br>
+<strong>Number of movies per genre:</strong> the number of movies across genres are disproportionately different. As a result, categorizing the quality based on an average vote to which some genres contributed more than others distorts the findings.<br>
+<strong>Number of movies per year:</strong> Most movies blong to 2006-2015 bucket. Again such difference in proportions causes distortion.<br>
+<strong>Number of votes:</strong> Different movies had rcieved different number of votes ranging from few hundred to few thousands. Voters participation definitely changes how a movie is rated. Such a big range in number of votes, does nut produce the most reliable rating chart.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
